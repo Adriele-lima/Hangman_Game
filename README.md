@@ -1,31 +1,78 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hangman Game
 
-Welcome Adriele Lima,
+It's a game for all ages!
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+![Responsive](https://github.com/Adriele-lima/Hangman_Game/blob/main/images/responsive.jpg)
 
-## Reminders
+## Existing Features
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+- __Random word__
 
-## Creating the Heroku app
+    - The game will start with a secret random word.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+![Random-word](https://github.com/Adriele-lima/Hangman_Game/blob/main/images/start.jpg)
 
-1. `heroku/python`
-2. `heroku/nodejs`
+- __Guessing a correct word__
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+    - Player will guess a word and if it’s correct it will show the location of that word on the secret word.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+![Correct-guess](https://github.com/Adriele-lima/Hangman_Game/blob/main/images/correct-word.jpg)
 
-Connect your GitHub repository and deploy as normal.
+- __Guessing a wrong word__
 
-## Constraints
+    - Player will guess a word and if it’s not correct a part of the body will be hanged.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+![Wrong-guess](https://github.com/Adriele-lima/Hangman_Game/blob/main/images/wrong-word.jpg)
 
------
-Happy coding!
+- __Guessing an invalid word__
+
+    - Player will guess a word and if it’s not an alphabetic word it will show an error.
+
+![Invalid-guess](https://github.com/Adriele-lima/Hangman_Game/blob/main/images/invalid-word.jpg)
+
+- __Winning the game__
+
+    - Player will win when guessing all the letters in the word correctly.
+
+![Winning](https://github.com/Adriele-lima/Hangman_Game/blob/main/images/win.jpg)
+
+- __Losing the game__
+
+    - Player will lose when failed to guess the correct word and all the parts of the body is hanged.
+
+![Hangman](https://github.com/Adriele-lima/Hangman_Game/blob/main/images/hangman.jpg)
+
+![Losing](https://github.com/Adriele-lima/Hangman_Game/blob/main/images/lose.jpg)
+
+## Testing
+
+I have manually tested this project by doing the following:
+
+- Passed the code through a PEP8 linter and confirmed that are no problems.
+
+- Given invalid inputs: numbers and wrong quantity of letters or adding the same value twice.
+
+- Tested in my local terminal and on Heroku terminal. 
+
+## Bugs
+
+- __Solved Bugs__
+
+    - When I deployed my project to Heroku I received an error because I forgot to use the Code Institute Template. After I changed all my code to a new file using the template I succeed with the deployment.
+
+## Deployment
+
+- On Heroku page:
+    - Create a new app;
+    - Create a name to your file “Must be unique” and select your region;
+    - Setting the vars and add the building pack;
+    - Select your project from Github on the deploy area;
+    - After that it will give the link for the deployed game.
+
+The deployed link can be found here [Hangman-Game]( https://hangmanpj3.herokuapp.com/)
+
+## Credits
+
+Th credits are for this video that helped me to create this game.
+
+- [Youtube-Video]( (2) How to build HANGMAN with Python in 10 MINUTES - YouTube)
