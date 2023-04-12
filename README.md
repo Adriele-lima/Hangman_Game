@@ -75,4 +75,4 @@ The deployed link can be found here [Hangman-Game]( https://hangmanpj3.herokuapp
 
 Th credits are for this video that helped me to create this game.
 
-- [Youtube-Video]( (2) How to build HANGMAN with Python in 10 MINUTES - YouTube)
+- [Youtube-Video](https://www.youtube.com/watch?v=m4nEnsavl6w&t=110s)
